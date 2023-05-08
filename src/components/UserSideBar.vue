@@ -17,7 +17,7 @@
             </li>
         </ul>
         <hr>
-        <button class="btn btn-dark" @click="logOut">Log Out</button>
+        <button class="btn btn-dark" v-on:click="logout">Log Out</button>
     </div>
 </template>
 
@@ -25,7 +25,7 @@
 export default {
     name: 'UserSideBar',
     methods: {
-        logOut() {
+        logout() {
             localStorage.clear();
             this.$router.push({ name: 'Login' })
         }
