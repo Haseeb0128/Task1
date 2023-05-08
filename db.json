@@ -1,0 +1,40 @@
+{
+  "user": [
+    {
+      "role": "admin",
+      "email": "haseebn2868@gmail.com",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "role": "user",
+      "email": "harismuhammad271@gmail.com",
+      "password": "67890",
+      "id": 2
+    },
+    {
+      "role": "user",
+      "email": "haseeb@gmail.com",
+      "password": "00000",
+      "id": 3
+    }
+  ],
+  "tasks": [
+    {
+      "task": "Learn Vue Js",
+      "id": 1
+    },
+    {
+      "task": "Implement Vue Js",
+      "id": 2
+    },
+    {
+      "task": "Practice Vue JS",
+      "id": 3
+    },
+    {
+      "task": "Go to sleep now",
+      "id": 4
+    }
+  ]
+}
