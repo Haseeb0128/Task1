@@ -37,13 +37,13 @@ export default {
     methods: {
         async login() {
             let result = await axios.get(`http://localhost:3000/user?email=${this.email}&password=${this.password}`)
-            console.log(result);
+            // console.log(result);
 
 
             if (result.status == 200 && result.data.length > 0) {
                 const user = result.data[0];
-                console.log(user.role);
-                localStorage.setItem("user", JSON.stringify(result.data[0]));
+                // console.log(user.role);
+                localStorage.setItem("user", JSON.stringify(user));
 
                 if (user.role == 'admin') {
                     this.$router.push({ name: "Admin" });
